@@ -12,5 +12,11 @@ pipeline {
       }
     }
 
+    stage('checkout plugins') {
+      steps {
+        git 'https://github.com/r0kk0/ExileApiPlugins.git'
+      }
+    }
+
   }
 }
